@@ -1,3 +1,8 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -8,30 +13,30 @@ ul {
 /*style text in nav menu*/
 li a {
     display: block;
-    padding: 10px;
-    font-size: 16px;
+    padding: 14px;
+    font-size: 24px;
     transition: font-size 0.3s ease;
     color: beige;
 }
 
 /*when hovering over text*/
 li a:hover {
-    font-size: 20px;
-    background-color: #FFFFE0;
+    font-size: 26px;
+    background-color: #21211d;
 }
 
 li {
-    display: inline-block; 
+    display: inline-block;
 }
 
 h1 {
     text-align: left;
     color: beige;
-    font-size: 28px;
+    font-size: 40px;
 }
 
 h2 {
     text-align: left;
     color: beige;
-    font-size: 20px;
+    font-size: 34px;
 }
