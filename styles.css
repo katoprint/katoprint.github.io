@@ -22,7 +22,7 @@ li a {
 /*when hovering over text*/
 li a:hover {
     font-size: 22px;
-    background-color: ##292924;
+    background-color: #292924;
 }
 
 li {
@@ -40,4 +40,5 @@ h2 {
     color: beige;
     font-size: 34px;
 }
+
 
