@@ -1,0 +1,56 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-color: #d6d5d3;
+}
+
+.header {
+    .title {
+        position: absolute;
+    }
+
+    h1 {
+        text-align: left;
+        color: beige;
+        margin-top: 200px;
+        padding: 30px;
+        font-size: 80px;
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+
+    h2 {
+        text-align: left;
+        color: beige;
+        margin-top: 300px;
+        padding: 30px;
+        font-size: 34px;
+        opacity: 0;
+        animation: fadeIn 2s ease-in-out forwards;
+    }
+}
+
+.subheader {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.6s ease-in;
+}
+.fade-in.appear {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+
+
