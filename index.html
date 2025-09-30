@@ -4,17 +4,30 @@
         <meta charset = "UTF-8">
         <meta name = "description" content = "Webpage used for displaying artwork."
         <meta name = "author" content = "Caden Sato">
-        <link rel = "stylesheet" href = "styles.css">
+        <link rel = "stylesheet" href = "home.css">
+        <link rel = "stylesheet" href = "navBarStyle.css">
     </head>
     <body>
         <!--navigation menu-->
-        <nav> <ul> <li><a>Home</a></li> 
-            <li><a>Works</a></li> 
-            <li><a>Prints</a></li> 
-            <li><a>About</a></li> </ul> </nav>
+        <div id = "navBar">
+            <a href = "index.html">Home</a>
+            <a href = "works.html">Works</a>
+            <a>Prints</a> 
+            <a href = "about.html">About</a>
+        </div>
+        
+        <div class = "header">
+            <h1 class = "title"><b>Caden Sato</b></h1>
+            <h2 class = "title">I am working on this</h2>
 
-        <h1><b>Caden Sato</b></h1>
-        <h2>I am working on this</h2>
+            <img src="light.jpg" style="width: 1950px; height: 1300px;">
+        </div>
 
+        <div class = "fade-in appear">
+            <p class = "subheader"> current projects </p>
+            <img src = "resize1.jpg" style = "width: 578px; height: 800px;">
+        </div>
+        <script src = "navBar.js"></script>
+        <script src = "home.js"></script>
     </body>
 </html>
