@@ -12,6 +12,11 @@ body {
         position: absolute;
     }
 
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
     h1 {
         text-align: left;
         color: beige;
@@ -51,6 +56,5 @@ body {
   from {opacity: 0}
   to {opacity: 1}
 }
-
 
 

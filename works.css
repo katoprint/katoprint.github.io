@@ -3,33 +3,6 @@ html, body {
     padding: 0;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background-color:#1F1F1B;
-}
-
-/*style text in nav menu*/
-li a {
-    display: block;
-    padding: 14px;
-    font-size: 20px;
-    transition: font-size 0.3s ease;
-    text-decoration: none;
-    color: beige;
-}
-
-/*when hovering over text*/
-li a:hover {
-    font-size: 22px;
-    background-color: #292924;
-}
-
-li {
-    display: inline-block;
-}
-
 body {
   background-color: #d6d5d3;
 }
@@ -60,29 +33,33 @@ h1 {
 }
 
 #tree {
+    position: relative;
     float: right;
-    margin-right: 150px;
-    margin-top: 120px;
+    margin-right: -20rem;
+    margin-top: 3rem;
 }
 
 #escape {
+    position: relative;
     float: left;
-    margin-left: 250px;
-    margin-top: 100px;
+    margin-left: 10rem;
+    margin-top: 3rem;
 
 }
 
 #spaced {
+    position: relative;
     float: right;
-    margin-right: 250px;
-    margin-top: 100px;
+    margin-right: -30rem;
+    margin-top: 3rem;
 
 }
 
 #catRush {
+    position: relative;
     float: left;
-    margin-left: 200px;
-    margin-top: 200px;
+    margin-left: 10rem;
+    margin-top: 5rem;
 
 }
 
