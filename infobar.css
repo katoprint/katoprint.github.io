@@ -1,0 +1,31 @@
+.infoBar {
+    bottom: 0;
+    padding: 10px;
+    background-color: #1F1F1B;
+    .text {
+        float: right;
+        margin-right: 485px;
+        opacity: 0;
+        font-size: 20px;
+        color: beige;
+        a {
+            text-decoration: none;
+        }
+        a:visited {
+            color: beige;
+        }
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        transition: opacity 1s ease-in, transform 1s ease-in;
+    }
+    .image {
+        float: center;
+        margin-top: 10px;
+        margin-left: 600px;
+        width: 50%;
+    }
+    .image:hover .text{
+        opacity: 1;
+        transform: translateX(10%);
+
+    }
+}
