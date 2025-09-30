@@ -9,6 +9,7 @@
         font-size: 20px;
         color: beige;
         a {
+            color: beige;
             text-decoration: none;
         }
         a:visited {
@@ -28,4 +29,5 @@
         transform: translateX(10%);
 
     }
+
 }
