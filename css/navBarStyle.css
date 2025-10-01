@@ -8,6 +8,13 @@
     top: 0; /* At the top */
     z-index: 99;
 
+    img {
+        float: left;
+        width: 5%;
+        height: 5%;
+        filter: invert(100%);
+    }
+
     a {
         float: left;
         padding: 14px;
