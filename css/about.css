@@ -1,0 +1,87 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #d6d5d3;
+}
+h1 {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    animation: fadeInHeader 1.2s ease-in-out forwards;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    animation: fadeIn 1.8s ease-in-out forwards;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    animation: fadeIn 1.8s ease-in-out forwards;
+}
+
+.artistStatement {
+    p {
+        display: block;
+        margin-left: 200px;
+        margin-right: 200px;
+        font-size: 18px;
+        line-height: 2;
+        animation: fadeIn 1.9s ease-in-out forwards;
+    }
+}
+
+.CV {
+    padding: 50px;
+    display: block;
+
+    .info {
+        font-size: 18px;
+    }
+
+    .sectionOne {
+        animation: fadeIn 1.9s ease-in-out forwards;
+    }
+    .sectionTwo {
+        animation: fadeIn 2.2s ease-in-out forwards;
+    }
+    .sectionThree {
+        animation: fadeIn 2.5s ease-in-out forwards;
+    }
+    .sectionFour {
+        animation: fadeIn 2.8s ease-in-out forwards;
+    }
+
+    .list {
+        padding: 10px;
+        margin-left: 20px;
+        font-size: 18px;
+    }
+
+    .subHeader {
+        font-size: 25px;
+    }
+}
+
+@keyframes fadeInHeader {
+  from {opacity: 0}
+  to {opacity: 1}
+  from {margin-top: 120px}
+  to {margin-top: 150px}
+}
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+  from {margin-top: 10px}
+  to {margin-top: 20px}
+}

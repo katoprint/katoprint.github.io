@@ -1,0 +1,54 @@
+body {
+  background-color: #d6d5d3;
+}
+
+a p {
+    display: inline-block;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    margin-left: 25px;
+    margin-top: 0;
+    color: rgb(109, 109, 109);
+    padding: 10px;
+    transition: font-size 0.3s ease;
+}
+
+a p:hover {
+  font-size: 26px;
+}
+
+.title {
+  position: absolute;
+  left: 8px;
+  margin-top: 5rem;
+  margin-left: 3rem;
+  font-size: 40px;
+  #oneLine {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+  #twoLine {
+    opacity: 0;
+    animation: fadeIn 1.9s ease-in-out forwards;
+  }
+  #date {
+    opacity: 0;
+    animation: fadeIn 2.1s ease-in-out forwards;
+  }
+}
+
+img {
+    max-width: 80vw;
+    width: 50%;
+    height: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+    filter: drop-shadow(5px 5px 10px #333);
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
