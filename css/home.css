@@ -4,12 +4,17 @@ html, body {
 }
 
 body {
-  background-color: #d6d5d3;
+    background-color: #d6d5d3;
 }
 
 .header {
+    position: sticky;
+    top: 0;
+    z-index: -1;
+    
     .title {
         position: absolute;
+        display: block;
     }
 
     img {
@@ -20,8 +25,9 @@ body {
     h1 {
         text-align: left;
         color: beige;
-        margin-top: 200px;
-        padding: 30px;
+        margin-top: 12rem;
+        padding: 2rem;
+        margin-bottom: 0;
         font-size: 80px;
         opacity: 0;
         animation: fadeIn 1.5s ease-in-out forwards;
@@ -30,18 +36,30 @@ body {
     h2 {
         text-align: left;
         color: beige;
-        margin-top: 300px;
-        padding: 30px;
+        margin-top: 0;
+        padding: 2rem;
         font-size: 34px;
         opacity: 0;
         animation: fadeIn 2s ease-in-out forwards;
     }
 }
 
-.subheader {
-    margin-top: 80px;
-    text-align: center;
-    font-size: 40px;
+.section01 {
+    background-color: #d6d5d3;
+    .subheader {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 2rem;
+        padding: 2rem;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    img {
+        display: block;
+        margin: auto;
+        padding: 2rem;
+        
+    }
 }
 
 .fade-in {
