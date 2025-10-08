@@ -23,18 +23,28 @@ a p:hover {
   left: 8px;
   margin-top: 5rem;
   margin-left: 3rem;
-  font-size: 40px;
   #oneLine {
     opacity: 0;
+    margin-bottom: 1rem;
+    font-size: 40px;
     animation: fadeIn 1.5s ease-in-out forwards;
   }
   #twoLine {
     opacity: 0;
+    margin-top: 0;
+    font-size: 40px;
     animation: fadeIn 1.9s ease-in-out forwards;
   }
   #date {
     opacity: 0;
+    margin-top: 0;
     animation: fadeIn 2.1s ease-in-out forwards;
+  }
+  .aboutSection {
+    opacity: 0;
+    margin-top: 4rem;
+    font-size: 24px;
+    animation: fadeIn 2.2s ease-in-out forwards;
   }
 }
 
@@ -44,7 +54,8 @@ img {
     height: 50%;
     height: auto;
     display: block;
-    margin: auto;
+    float: right;
+    margin-right: 4rem;
     filter: drop-shadow(5px 5px 10px #333);
 }
 

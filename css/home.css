@@ -15,6 +15,7 @@ body {
     .title {
         position: absolute;
         display: block;
+        z-index: 2;
     }
 
     img {
@@ -23,10 +24,9 @@ body {
     }
 
     h1 {
-        text-align: left;
         color: beige;
-        margin-top: 12rem;
-        padding: 2rem;
+        margin-top: 15.5rem;
+        margin-left: 10rem;
         margin-bottom: 0;
         font-size: 80px;
         opacity: 0;
@@ -34,31 +34,70 @@ body {
     }
 
     h2 {
-        text-align: left;
         color: beige;
         margin-top: 0;
-        padding: 2rem;
-        font-size: 34px;
+        margin-left: 10rem;
+        font-size: 80px;
         opacity: 0;
         animation: fadeIn 2s ease-in-out forwards;
     }
+
+     .squircle {
+        position: absolute;
+        z-index: 1;
+        margin-top: 10rem;
+        margin-left: 4rem;
+        width: 26rem;
+        height: 24rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        corner-shape: squircle;
+        background: #181D20;
+    }
 }
 
-.section01 {
+.sectionAfter {
     background-color: #d6d5d3;
-    .subheader {
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        margin-top: 2rem;
-        padding: 2rem;
-        text-align: center;
-        font-size: 40px;
-    }
+    display: grid;
+
+    .section01 {
+        .subHeader1 {
+            position: absolute;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 3rem;
+            margin-left: 4rem;
+            padding: 2rem;
+            text-align: left;
+            font-size: 40px;
+        }
     
-    img {
-        display: block;
-        margin: auto;
-        padding: 2rem;
-        
+        .squircle{
+            display: block;
+            float: right;
+            margin-right: 4rem;
+            margin-top: 4rem;
+            padding: 2rem;
+            width: 26rem;
+            height: 24rem;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            corner-shape: squircle;
+        }
+    }
+
+    .section02 {
+        .subHeader2 {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 2rem;
+            padding: 2rem;
+            text-align: center;
+            font-size: 40px;
+        }
+        img {
+            display: block;
+            margin: auto;
+            padding: 2rem;
+        }
     }
 }
 

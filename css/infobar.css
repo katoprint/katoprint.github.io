@@ -19,10 +19,15 @@
         transition: opacity 1s ease-in, transform 1s ease-in;
     }
     .image {
-        float: center;
-        margin-top: 10px;
-        margin-left: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        margin-left: 37rem;
         width: 50%;
+        #mail {
+            filter: invert(100%);
+        }
     }
     .image:hover .text{
         opacity: 1;

@@ -1,7 +1,7 @@
 #navBar {
     overflow: hidden;
     background-color:#1F1F1B;
-    padding: 30px 10px; /* Large padding which will shrink on scroll (using JS) */
+    padding: 20px 5px; /* Large padding which will shrink on scroll (using JS) */
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
     position: fixed; /* Sticky/fixed navbar */
     width: 100%;
@@ -15,11 +15,23 @@
         filter: invert(100%);
     }
 
-    a {
+    .leftFloat {
+        float: left;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-right: 2rem;
+        font-size: 24px;
+        text-decoration: none;
+        color: beige;
+    }
+
+    .rightFloat a {
         float: right;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         padding: 1rem;
-        margin-right: 1rem;
+        margin-top:1rem;
+        margin-right: 2rem;
         font-size: 16px;
         transition: font-size 0.3s ease;
         text-decoration: none;
