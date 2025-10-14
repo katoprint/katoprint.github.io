@@ -45,6 +45,13 @@ a p:hover {
     margin-top: 4rem;
     font-size: 24px;
     animation: fadeIn 2.2s ease-in-out forwards;
+
+    #para {
+      display: block;
+      margin-right: 58rem;
+      line-height: 2;
+      font-size: 18px;
+    }
   }
 }
 

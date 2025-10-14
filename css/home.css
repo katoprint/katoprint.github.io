@@ -91,7 +91,9 @@ body {
             margin-top: 2rem;
             padding: 2rem;
             text-align: center;
+            color:#181D20;
             font-size: 40px;
+            text-decoration: none;
         }
         img {
             display: block;
