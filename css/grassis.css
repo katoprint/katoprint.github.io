@@ -20,9 +20,9 @@ a p:hover {
 
 .title {
   position: absolute;
-  left: 8px;
-  margin-top: 50px;
-  margin-left: 50px;
+  left: 1rem;
+  margin-top: 5rem;
+  margin-left: 3rem;
   font-size: 40px;
   #oneLine {
     opacity: 0;
@@ -30,10 +30,12 @@ a p:hover {
   }
   #twoLine {
     opacity: 0;
+    margin-top: 0;
     animation: fadeIn 1.9s ease-in-out forwards;
   }
   #date {
     opacity: 0;
+    margin-top: 0;
     animation: fadeIn 2.1s ease-in-out forwards;
   }
   .aboutSection {
@@ -42,10 +44,20 @@ a p:hover {
     font-size: 24px;
     animation: fadeIn 2.2s ease-in-out forwards;
 
-    #para {
+    #info {
       display: block;
       margin-right: 58rem;
       line-height: 2;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 15px;
+    }
+
+    #para {
+      display: block;
+      margin-right: 58rem;
+      margin-top: 3rem;
+      line-height: 2;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
       font-size: 18px;
     }
   }
@@ -68,7 +80,7 @@ a p:hover {
 img {
     display: block;
     float: right;
-    margin-right: 4rem;
+    margin-right: 2rem;
     width: 50%;
     height: 50%;
     filter: drop-shadow(5px 5px 10px #333);
@@ -91,11 +103,11 @@ img {
 }
 
 .prev {
-  left: 25rem;
+  left: 26rem;
 }
 /* Position the "next button" to the right */
 .next {
-  right: 4rem;
+  right: 2rem;
   border-radius: 3px 0 0 3px;
 }
 
@@ -106,13 +118,11 @@ img {
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
-  margin-top: 10rem;
   margin-left: 46rem; 
 }
 

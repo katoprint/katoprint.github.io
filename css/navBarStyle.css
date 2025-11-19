@@ -1,12 +1,13 @@
 #navBar {
     overflow: hidden;
-    background-color:#1F1F1B;
+    
     padding: 20px 5px; /* Large padding which will shrink on scroll (using JS) */
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
-    position: fixed; /* Sticky/fixed navbar */
+    /* Sticky/fixed navbar */
     width: 100%;
     top: 0; /* At the top */
     z-index: 99;
+    
 
     img {
         float: left;
@@ -19,11 +20,11 @@
         float: left;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         padding: 1rem;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         margin-right: 2rem;
-        font-size: 24px;
+        font-size: 30px;
         text-decoration: none;
-        color: beige;
+        color: #1F1F1B;
     }
 
     .rightFloat a {
@@ -35,11 +36,11 @@
         font-size: 16px;
         transition: font-size 0.3s ease;
         text-decoration: none;
-        color: beige;
+        color: #1F1F1B;
     }
 
     a:hover {
     font-size: 18px;
-    background-color: #292924;
+    color: rgb(61, 61, 56);
     }
 }

@@ -5,6 +5,7 @@ html, body {
 
 body {
     background-color: #d6d5d3;
+    overflow-x: hidden;
 }
 h1 {
     text-align: center;
@@ -17,26 +18,25 @@ h1 {
 h2 {
     text-align: center;
     margin-top: 60px;
-    font-size: 30px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    animation: fadeIn 1.8s ease-in-out forwards;
-}
-
-h3 {
-    text-align: center;
-    margin-top: 60px;
-    font-size: 30px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
     animation: fadeIn 1.8s ease-in-out forwards;
 }
 
 .artistStatement {
+    h3 {
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 40px;
+    animation: fadeIn 1.8s ease-in-out forwards;
+    }
+
     p {
         display: block;
-        margin-left: 200px;
-        margin-right: 200px;
+        margin-left: 300px;
+        margin-right: 300px;
         font-size: 18px;
         line-height: 2;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
         animation: fadeIn 1.9s ease-in-out forwards;
     }
 }
@@ -47,6 +47,8 @@ h3 {
 
     .info {
         font-size: 18px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
 
     .sectionOne {
@@ -63,13 +65,17 @@ h3 {
     }
 
     .list {
-        padding: 10px;
-        margin-left: 20px;
+        margin: 3rem 15rem 3rem 18rem;
         font-size: 18px;
+        line-height: 1.5;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
 
     .subHeader {
-        font-size: 25px;
+        text-align: center;
+        margin: 5rem 0rem 0rem 0rem;
+        font-size: 24px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
 }
 

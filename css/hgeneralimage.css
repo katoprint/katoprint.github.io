@@ -61,18 +61,20 @@ a p:hover {
       line-height: 2;
       font-family:Verdana, Geneva, Tahoma, sans-serif;
       font-size: 18px;
+      margin-bottom: 5rem;
     }
   }
 }
 
 img {
-    max-width: 80vw;
-    width: 50%;
+    max-width: 300vw;
+    width: 65%;
     height: 50%;
     height: auto;
     display: block;
     float: right;
     margin-right: 4rem;
+    margin-top: 15rem;
     filter: drop-shadow(5px 5px 10px #333);
 }
 

@@ -10,15 +10,16 @@ body {
 h1 {
     text-align: center;
     margin-top: 10rem;
-    font-size: 40px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    animation: fadeIn 1s ease-in-out forwards;
+    font-size: 50px;
+    animation: fadeInHeader 1.2s ease-in-out forwards;
 }
 
-.projectimages {
+.horProjectImages {
     display: grid;
     row-gap: 2rem;
-    column-gap: 0;
+    column-gap: -5rem;
+    margin-top: 10rem;
+    margin-left: 10rem;
     
     img {
         display: block;
@@ -42,39 +43,91 @@ h1 {
     #title {
         font-size: 16px;
         font-style: italic;
-        background-color: rgb(218, 218, 218);
+      
         width: 20rem;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         padding: 1rem;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
-        filter: drop-shadow(2px 2px 5px #909090);
+ 
+    }
+
+    .catRush {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+}
+.projectimages {
+    display: grid;
+    row-gap: 2rem;
+    column-gap: -5rem;
+    margin-bottom: 5rem;
+    margin-left: 10rem;
+    
+    img {
+        display: block;
+        object-fit: cover;
+        filter: drop-shadow(5px 5px 10px #333);
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); 
+    }
+
+    @media screen and (max-width: 1920px) {
+        img {
+            width: 40%;
+            height: 40%;
+        }
+    }
+
+    img:hover {
+        transform: scale(1.05);
+        transition: all 0.3s cubic-bezier(0.4, 0.05, 0.3, 1);
+    }
+
+    #title {
+        font-size: 16px;
+        font-style: italic;
+      
+        width: 20rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+ 
     }
     .tree {
-        float: right;
-        margin-left: 10rem;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+  
     }
 
     .escape {
-        float: left;
-        margin-left: 10rem;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
 
     }
 
     .spaced {
-        float: right;
-        margin-left: 10rem;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
 
     }
 
-    .catRush {
-        float: left;
-        margin-left: 10rem;
-        margin-top: 5rem;
+    .birds {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
     }
 }
 
 
-@keyframes fadeIn {
+@keyframes fadeInHeader {
   from {opacity: 0}
   to {opacity: 1}
   from {margin-top: 120px}

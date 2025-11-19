@@ -5,6 +5,7 @@ html, body {
 
 body {
     background-color: #d6d5d3;
+    overflow-x: hidden;
 }
 
 .header {
@@ -13,8 +14,8 @@ body {
     z-index: -1;
     
     .title {
-        position: absolute;
-        display: block;
+        position: relative;
+        text-align: center;
         z-index: 2;
     }
 
@@ -24,25 +25,30 @@ body {
     }
 
     h1 {
-        color: beige;
-        margin-top: 15.5rem;
-        margin-left: 10rem;
-        margin-bottom: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 18rem;
+        color: #1F1F1B;
         font-size: 80px;
         opacity: 0;
         animation: fadeIn 1.5s ease-in-out forwards;
     }
 
     h2 {
-        color: beige;
-        margin-top: 0;
-        margin-left: 10rem;
-        font-size: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 23rem;
+        color: #1F1F1B;
+        font-size: 30px;
         opacity: 0;
         animation: fadeIn 2s ease-in-out forwards;
     }
 
-     .squircle {
+    /*.squircle {
         position: absolute;
         z-index: 1;
         margin-top: 10rem;
@@ -53,52 +59,83 @@ body {
         border-radius: 50%;
         corner-shape: squircle;
         background: #181D20;
-    }
+    }*/
 }
 
 .sectionAfter {
     background-color: #d6d5d3;
-    display: grid;
-
     .section01 {
-        .subHeader1 {
-            position: absolute;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            margin-top: 3rem;
-            margin-left: 4rem;
-            padding: 2rem;
-            text-align: left;
-            font-size: 40px;
+        p {
+            margin: 5rem 0rem 3rem 0rem;
+            padding: 5rem;
+            text-align: center;
+            font-size: 50px;
         }
-    
-        .squircle{
-            display: block;
-            float: right;
-            margin-right: 4rem;
-            margin-top: 4rem;
-            padding: 2rem;
-            width: 26rem;
-            height: 24rem;
-            aspect-ratio: 1;
-            border-radius: 50%;
-            corner-shape: squircle;
+        .section01img {
+            display: grid;
+            margin-top: -5rem;
+            column-gap: 0.5rem;
+            row-gap: 0.5rem;
+            .img1 {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+            .img2 {
+                grid-column-start: 2;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+            .img3 {
+                grid-column-start: 3;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+            .img4 {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+            .img5 {
+                grid-column-start: 2;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+            .img6 {
+                grid-column-start: 3;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+        }
+        img:hover {
+        transform: scale(1.05);
+        transition: all 0.3s cubic-bezier(0.4, 0.05, 0.3, 1);
         }
     }
 
     .section02 {
         .subHeader2 {
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            margin-top: 2rem;
-            padding: 2rem;
+            margin-top: 5rem;
+            margin-bottom: -5rem;
+            padding: 5rem;
             text-align: center;
-            color:#181D20;
-            font-size: 40px;
+            color: black;
+            font-size: 50px;
+        }
+        a {
             text-decoration: none;
         }
         img {
             display: block;
             margin: auto;
-            padding: 2rem;
+            margin-top: -5rem;
+            padding: 5rem;
         }
     }
 }
