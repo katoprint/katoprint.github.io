@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #d6d5d3;
+    overflow-x: hidden;
+}
+h1 {
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    animation: fadeInHeader 1.2s ease-in-out forwards;
+}
+.artistStatement {
+    margin-bottom: 5rem;
+    
+    h3 {
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 40px;
+    animation: fadeIn 1.8s ease-in-out forwards;
+    }
+
+    p {
+        display: block;
+        margin-left: 300px;
+        margin-right: 300px;
+        font-size: 18px;
+        line-height: 2;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        animation: fadeIn 1.9s ease-in-out forwards;
+    }
+}
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+  from {margin-top: 10px}
+  to {margin-top: 20px}
+}

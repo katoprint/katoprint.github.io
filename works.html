@@ -8,6 +8,7 @@
         <link rel = "stylesheet" href = "css/works.css">
         <link rel = "stylesheet" href = "css/navBarStyle.css">
         <link rel = "stylesheet" href = "css/infobar.css">
+        <link rel = "stylesheet" href = "css/sideNav.css">
     </head>
     <body>
         <!--navigation menu-->
@@ -23,7 +24,16 @@
             </div>
         </div>
 
-        <h1><b>Works</b></h1>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="works.html">All Works</a>
+            <a href="iamyGod.html">I Am Your God</a>
+        </div>
+
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()" id="open">menu</span>
+
+        
 
         <div class = "horProjectImages">
             <div class = "catRush">
@@ -68,19 +78,15 @@
         <div class = "infoBar">
             <div class = "image">
                 <a href = "mailto: cskato2@gmail.com" target = "_blank" id = "mail">
-                    <img src = "images/mail.png" style = "width: 60px; height: 60px;">
+                    <img src = "images/mail.png" style = "width: 55px; height: 55px;">
                 </a>
                 <a href = "https://www.instagram.com/ka.at0?igsh=Zmp0dTI0dHE3Mj5&utm_source=qr" target = "_blank" id = "instagram">
                     <img src = "images/instalogo.png" style = "width: 50px; height: 50px;">
                 </a>
-                <div class = "text">
-                    <a href = "https://www.instagram.com/ka.at0?igsh=Zmp0dTI0dHE3Mj5&utm_source=qr" target = "_blank">
-                        <p>@ka.at0</p>
-                    </a>
-                </div>
             </div>
         </div>
     
         <script src = "navBar.js"></script>
+        <script src = "sideNav.js"></script>
     </body>
 </html>

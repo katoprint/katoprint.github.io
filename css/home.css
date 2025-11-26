@@ -12,42 +12,41 @@ body {
     position: sticky;
     top: 0;
     z-index: -1;
-    
-    .title {
-        position: relative;
-        text-align: center;
-        z-index: 2;
-    }
 
     img {
         max-width: 100%;
         height: auto;
     }
+    .title {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        z-index: 2;
 
-    h1 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 18rem;
-        color: #1F1F1B;
-        font-size: 80px;
-        opacity: 0;
-        animation: fadeIn 1.5s ease-in-out forwards;
+        h1 {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 13rem;
+            color: #1F1F1B;
+            font-size: 80px;
+            opacity: 0;
+            animation: slideDown 1.5s ease-in-out forwards;
+        }
+
+        h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 21rem;
+            color: #1F1F1B;
+            font-size: 30px;
+            opacity: 0;
+            animation: slideDown 2s ease-in-out forwards;
+        }
     }
-
-    h2 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 23rem;
-        color: #1F1F1B;
-        font-size: 30px;
-        opacity: 0;
-        animation: fadeIn 2s ease-in-out forwards;
-    }
-
     /*.squircle {
         position: absolute;
         z-index: 1;
@@ -61,33 +60,53 @@ body {
         background: #181D20;
     }*/
 }
-
+    @keyframes slideDown {
+        from {opacity: 0}
+        to {opacity: 1}
+        from {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        to {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 60%);
+        }
+    }
+/*
 .sectionAfter {
     background-color: #d6d5d3;
     .section01 {
-        p {
-            margin: 5rem 0rem 3rem 0rem;
+        #spacer {
             padding: 5rem;
-            text-align: center;
-            font-size: 50px;
         }
         .section01img {
             display: grid;
             margin-top: -5rem;
             column-gap: 0.5rem;
             row-gap: 0.5rem;
+            .subHeader1 {
+                grid-column-start: 2;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 1;
+                text-align: center;
+                color: black;
+                font-size: 50px;
+                transition: 0.4s;
+            }
+
+            a {
+                text-decoration: none;
+            }
             .img1 {
                 grid-column-start: 1;
                 grid-column-end: 1;
                 grid-row-start: 1;
                 grid-row-end: 1;
             }
-            .img2 {
-                grid-column-start: 2;
-                grid-column-end: 2;
-                grid-row-start: 1;
-                grid-row-end: 1;
-            }
+
             .img3 {
                 grid-column-start: 3;
                 grid-column-end: 3;
@@ -113,9 +132,9 @@ body {
                 grid-row-end: 2;
             }
         }
-        img:hover {
-        transform: scale(1.05);
-        transition: all 0.3s cubic-bezier(0.4, 0.05, 0.3, 1);
+        a:hover {
+            font-size: 55px;
+            color: rgb(61, 61, 56);
         }
     }
 
@@ -127,6 +146,7 @@ body {
             text-align: center;
             color: black;
             font-size: 50px;
+            transition: 0.4s;
         }
         a {
             text-decoration: none;
@@ -137,9 +157,13 @@ body {
             margin-top: -5rem;
             padding: 5rem;
         }
+        p:hover {
+            font-size: 55px;
+            color: rgb(61, 61, 56);
+        }
     }
 }
-
+*/
 .fade-in {
     opacity: 0;
     transition: opacity 0.6s ease-in;

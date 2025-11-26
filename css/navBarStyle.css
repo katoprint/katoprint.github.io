@@ -39,7 +39,7 @@
         color: #1F1F1B;
     }
 
-    a:hover {
+    .rightFloat a:hover {
     font-size: 18px;
     color: rgb(61, 61, 56);
     }

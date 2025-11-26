@@ -2,36 +2,22 @@
     bottom: 0;
     padding: 10px;
     background-color: #1F1F1B;
-    .text {
-        float: right;
-        margin-right: 485px;
-        opacity: 0;
-        font-size: 20px;
-        color: beige;
-        a {
-            color: beige;
-            text-decoration: none;
-        }
-        a:visited {
-            color: beige;
-        }
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        transition: opacity 1s ease-in, transform 1s ease-in;
-    }
     .image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: block;
+        margin: 0 auto;
         margin-top: 1rem;
-        margin-left: 37rem;
-        width: 50%;
+        width: 10%;
+
         #mail {
             filter: invert(100%);
         }
-    }
-    .image:hover .text{
-        opacity: 1;
-        transform: translateX(10%);
 
+        a {
+            text-decoration: none;
+        }
+    }
+    img:hover {
+        transform: scale(1.05);
+        transition: all 0.3s cubic-bezier(0.4, 0.05, 0.3, 1);
     }
 }

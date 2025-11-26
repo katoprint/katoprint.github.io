@@ -8,9 +8,10 @@
         <link rel = "stylesheet" href = "css/about.css">
         <link rel = "stylesheet" href = "css/navBarStyle.css">
         <link rel = "stylesheet" href = "css/infobar.css">
+        <link rel = "stylesheet" href = "css/sideNav.css">
     </head>
     <body>
-         <!--navigation menu-->
+        <!--navigation menu-->
         <div id = "navBar">
             <div class = "leftFloat">
                 <a>KATO</a>
@@ -23,27 +24,35 @@
             </div>
         </div>
 
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="about.html">Bio & CV</a>
+            <a href="artistStatement.html">Artist Statement</a>
+        </div>
+
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()" id="open">menu</span>
+
             <h1></h1>
 
-            <div class = "artistStatement">
-                <h3>Artist Statement</h3>
+            <div class = "artistBio">
+                <h3>Artist Biography</h3>
 
                 <p><span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;I work in graphite on paper and digital medium print. My prints make use of watercolor paper, 
-                    allowing me to bend and fold them to create 3D forms in an otherwise 2D space. Manga and comics 
-                    have been a recent obsession of mine within the past few years. How deeper interpersonal conflicts 
-                    are tackled through often quirky and hyper stylised caricatures captivates me. Dynamic action and 
-                    fight scenes, and how they can serve as a vessel for conflict resolution grips me the most. 
-                    To emphasize this dynamicism, I cut out certain subjects and raise them above the paper giving these 
-                    pieces an almost playful children’s popup book feel.     
-                </span></p>
-                <p><span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;My narratives often explore themes of individuality and identity, of how we 
-                    struggle to be our true selves against what society wants us to be. Many characters I create don masks 
-                    against their will, emulating my own struggles to break free of parental expectations. As I create my works, 
-                    I reflect upon my experiences of explaining my profession, being met with empty replies: “oh cool” and “that’s 
-                    interesting”. Writing and drawing these tales serve as outlets for my frustration as an artist, producing in 
-                    a world that measures contribution to society in capitalistic wealth.     
+                    &nbsp;&nbsp;&nbsp;&nbsp;Caden Sato handles digital prints with archival pigment on a mix of 
+                    watercolor and archival papers. Caden makes use of a full bleed technique with digital prints, 
+                    breaking the borders of conventional archival prints. Further pushing this theme, 
+                    large popouts that resemble those of children's books adds a layer of excitement to an 
+                    otherwise 2D space. His work often emulates the style and technique of manga and comic books, 
+                    representing narratives through a sequence of panels meant to lead the viewer through small 
+                    sections of a larger story. Brutalist/form follows function style architecture are common 
+                    settings for these stories. Caden often conflates these two separate themes to create over 
+                    the top and quirky narratives that challenge identity and professionalism. Caden is currently 
+                    studying at the University of Hawaii at Manoa. He is set to graduate in 2027 with a Bachelors 
+                    of Fine Arts. For the past three years he has been studying digital imaging under 
+                    Scott Groeniger, building his knowledge for handling professional as well as experimental ink 
+                    jet printing. In 2025, Caden received the most outstanding undergraduate student in digital 
+                    imaging from the University of Hawaii at Manoa.
                 </span></p>
             </div>
 
@@ -75,18 +84,14 @@
         <div class = "infoBar">
             <div class = "image">
                 <a href = "mailto: cskato2@gmail.com" target = "_blank" id = "mail">
-                    <img src = "images/mail.png" style = "width: 60px; height: 60px;">
+                    <img src = "images/mail.png" style = "width: 55px; height: 55px;">
                 </a>
                 <a href = "https://www.instagram.com/ka.at0?igsh=Zmp0dTI0dHE3Mj5&utm_source=qr" target = "_blank">
                     <img src = "images/instalogo.png" style = "width: 50px; height: 50px;">
                 </a>
-                <div class = "text">
-                    <a href = "https://www.instagram.com/ka.at0?igsh=Zmp0dTI0dHE3Mj5&utm_source=qr" target = "_blank">
-                        <p>@ka.at0</p>
-                    </a>
-                </div>
             </div>
         </div>
-            <script src = "navBar.js"></script>
+        <script src = "navBar.js"></script>
+        <script src = "sideNav.js"></script>
     </body>
 </html>

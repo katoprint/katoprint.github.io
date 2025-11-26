@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "subpage of works"
+        <meta name = "author" content = "Caden Sato">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "css/navBarStyle.css">
+        <link rel = "stylesheet" href = "css/infobar.css">
+        <link rel = "stylesheet" href = "css/sideNav.css">
+    </head>
+
+    <body>
+        <!--navigation menu-->
+        <div id = "navBar">
+            <div class = "leftFloat">
+                <a>KATO</a>
+            </div>
+            <div class = "rightFloat">
+                <a href = "about.html">About</a>
+                <a href = "prints.html">Prints</a>
+                <a href = "works.html">Works</a>
+                <a href = "index.html">Home</a>
+            </div>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="works.html">All Works</a>
+            <a href="iamyGod.html">I Am Your God</a>
+        </div>
+
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()" id="open">menu</span>
+
+        <div class = "horProjectImages">
+            <div class = "catRush">
+                <a href = "wpwt.html"><img src = "images/rush.jpg" alt = "rush" 
+                style = "width: 50rem; height: 30rem;"></a>
+
+                <p id = "title"> Wrong Place Wrong Time </p>
+            </div>
+        </div>
+
+        <script src = "navBar.js"></script>
+        <script src = "sideNav.js"></script>
+    </body>
+</html>
