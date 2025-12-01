@@ -1,0 +1,60 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #d6d5d3;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 50px;
+    animation: fadeInHeader 1.2s ease-in-out forwards;
+}
+
+.horProjectImages {
+    display: grid;
+    row-gap: 2rem;
+    column-gap: -5rem;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    
+    img {
+        display: block;
+        object-fit: cover;
+        filter: drop-shadow(5px 5px 10px #333);
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); 
+    }
+
+    @media screen and (max-width: 1920px) {
+        img {
+            width: 40%;
+            height: 40%;
+        }
+    }
+
+    img:hover {
+        transform: scale(1.05);
+        transition: all 0.3s cubic-bezier(0.4, 0.05, 0.3, 1);
+    }
+
+    #title {
+        font-size: 16px;
+        font-style: italic;
+      
+        width: 20rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+ 
+    }
+
+    .catRush {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+}

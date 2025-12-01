@@ -22,13 +22,26 @@
                 <a href = "index.html">Home</a>
             </div>
         </div>
-
+        
         <h1> Prints </h1>
         <p id = "sorry">sorry there is nothing in stock right now</p>
-        <div class = "printImages">
-            <img src = "images/MIKUSEAL.png">
+    
+        <main>
+        <!-- image carousel-->
+        <div class = "carousel">
+            <div class = "card"><img src = "images/MIKUSEAL.png"></div>
+            <div class = "card"><img src = "images/MIKUSEAL.png"></div>
+            <div class = "card"><img src = "images/resize1.jpg" style = "width: 750px"></div>
+            <div class = "card"><img src = "images/resize2.jpg" style = "width: 750px"></div>
+            <div class = "card"><img src = "images/birds.jpg" style = "width: 750px"></div>
+            <div class = "card"><img src = "images/MIKUSEAL.png"></div>
         </div>
-
+        <svg class="arrow" viewBox="0 0 2 10">
+            <path stroke="#333" d="M0,0 0,0" />
+        </svg>
+        <!-- end of carousel-->
+        </main>
+        <!--
         <div class = "infoBar">
             <div class = "image">
                 <a href = "mailto: cskato2@gmail.com" target = "_blank" id = "mail">
@@ -39,5 +52,9 @@
                 </a>
             </div>
         </div>
+    -->
+        <script src = "gsap.min.js"></script>
+        <script src = "ScrollTrigger.min.js"></script>
+        <script src = "vertImageCarousel.js"></script>
     </body>
 </html>
