@@ -5,6 +5,9 @@ html, body {
 body {
     background-color: #d6d5d3;
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 h1 {
     text-align: center;
@@ -15,6 +18,7 @@ h1 {
 }
 .artistStatement {
     margin-bottom: 5rem;
+    flex: 1;
     
     h3 {
     text-align: center;

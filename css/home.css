@@ -19,7 +19,7 @@ body {
     }
     .title {
         position: relative;
-        height: 100%;
+        text-align: center;
         z-index: 2;
 
         h1 {

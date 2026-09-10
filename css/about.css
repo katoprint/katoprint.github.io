@@ -53,15 +53,19 @@ h2 {
     }
 
     .sectionOne {
+        text-align: center;
         animation: fadeIn 1.9s ease-in-out forwards;
     }
     .sectionTwo {
+        text-align: center;
         animation: fadeIn 2.2s ease-in-out forwards;
     }
     .sectionThree {
+        text-align: center;
         animation: fadeIn 2.5s ease-in-out forwards;
     }
     .sectionFour {
+        text-align: center;
         animation: fadeIn 2.8s ease-in-out forwards;
     }
 
